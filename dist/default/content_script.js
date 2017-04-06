@@ -25,6 +25,9 @@ window.colorDetectFields = function() {
   colorizeField(fields.submitButton, 'blue');
   colorizeField(fields.username, 'blue');
   colorizeField(fields.password, 'blue');
+    colorizeField(fields.email, 'blue');
+  colorizeField(fields.fname, 'blue');
+
 }
 
 window.triggerObtainValues = function() {
@@ -39,4 +42,11 @@ window.triggerObtainValues = function() {
     return;
   }
   alert('Username: '+result.username+'; Password: '+result.password);
+  if(result.email){
+    alert('email/mobile'+result.email);
+  }
+  if(result.fname)
+  {
+    alert('Full name'+result.fname);
+  }
 }
