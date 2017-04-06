@@ -119,7 +119,9 @@ getURL();
     form: getFormField(),
     submitButton: sbtbtnid,
     username: usernameid,
-    password: pwid
+    password: pwid,
+    email: mobem,
+    fname: name
   };
 
 };
@@ -141,7 +143,9 @@ getURL();
 
   return {
     username: $(usernameid).val(),
-    password: $(pwid).val()
+    password: $(pwid).val(),
+    email:$(mobem).val(),
+    fname:$(name).val()
   };
 
 
